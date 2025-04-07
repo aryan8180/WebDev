@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button>9a</button>
+    <button class="second-btn">9b</button><br>
+
+    <button onclick="
+        document.querySelector('.clickDisplay').innerHTML = 'You Choose: Heads'
+    ">Heads</button>
+    <button onclick="
+        document.querySelector('.clickDisplay').innerHTML = 'You Choose: Tails'
+    ">Tails</button>
+    <p class="clickDisplay"></p>
+
+    <input placeholder="Name" class="js-name-input" onkeydown="handleCostkeydown(event)">
+    <button onclick="
+    ">Submit</button>
+
+    <p class="js-message"></p>
+    <script>
+        console.log(document.querySelector('button'))
+        document.querySelector('.second-btn').innerHTML = '9b done';
+
+        function handleCostkeydown(event) {
+            if (event.key === "Enter") {
+                callName();
+            }
+        }
+
+        function callName() {
+            const inputElement = document.querySelector('.js-name-input');
+            document.querySelector('.js-message').innerHTML = `Your name is ${inputElement.value}`;
+        }
+
+
+    </script>
+</body>
+
+</html>

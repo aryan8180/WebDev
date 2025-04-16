@@ -89,3 +89,18 @@ function countPositive(nums) {
 }
 
 console.log(`There are ${countPositive([10,2,3,-1,-3])} positive numbers in the array.`);
+
+function minMax(nums) {
+    let maxi = 1;
+    let mini = nums[0];
+    for(let i=0;i<nums.length;i++){
+        if(nums[i]>maxi){
+            maxi = nums[i];
+        }else if(nums[i]<mini){
+            mini = nums[i];
+        }
+    }
+    return `max: ${maxi}, min: ${mini}`;
+}
+
+console.log(minMax([40,20,30,11]));

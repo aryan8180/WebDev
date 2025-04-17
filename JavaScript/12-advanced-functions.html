@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Advanced Functions</title>
+</head>
+<body>
+    <script>
+        // Basic function declaration
+        function greeting() {
+            console.log('Hello');
+        }
+        greeting();
+
+        // Function expression (anonymous function assigned to a variable)
+        const function1 = function () {
+            console.log('hello2');
+        };
+
+        console.log(function1); // Logs the function definition
+        console.log(typeof function1); // 'function'
+        function1(); // Calls the function
+
+        // Object with a method
+        const object1 = {
+            num: 2,
+            fun: function greeting() {
+                console.log('hello3');
+            }
+        };
+        console.log(object1.num); // 2
+        object1.fun(); // Calls the method
+
+        // Function with parameter
+        function display(param) {
+            console.log(param);
+        }
+        display(69); // Passing a value into a function
+
+        // Function that takes another function as parameter
+        function run(param) {
+            param();
+        }
+        run(function() {
+            console.log('hello4');
+        });
+
+        // Asynchronous code with setTimeout
+        setTimeout(function() {
+            console.log('timeout');
+            console.log('timeout2');
+        }, 3000); // Executes after 3 seconds
+
+        // Example of setInterval (commented out)
+        // setInterval(function() {
+        //     console.log('Interval');
+        // }, 3000);
+
+        // Array iteration with forEach
+        [
+            'make dinner',
+            'wash dishes',
+            'watch youtube'
+        ].forEach(function (value, index) {
+            console.log(index);
+            console.log(value);
+        });
+
+        const regularFunction = function(param, param2) {
+            console.log('hello from regular function');
+            return 5;
+        }
+        const arrowFunction = (param,param2) => {
+            console.log('hello');
+            return 5;
+        }
+        arrowFunction();
+
+        const oneParam = (param) => {
+            console.log(param+1);
+        }
+        oneParam(2);
+
+        const oneLine = () => {
+            return 2+3;
+        }
+
+        const buttonElement = document.querySelector('.js-button');
+        buttonElement.addEventListener('click', () => {
+            console.log('click');
+        });
+    </script>
+</body>
+</html>

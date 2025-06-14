@@ -1,12 +1,6 @@
-const fs = require("fs")
+const fs = require("fs");
 
-// fs.writeFile("message.txt","Hello from Nodejs", (err) => {
-//     if (err) throw err;
-//     console.log('The file has been saved!');
-//   });
-
-
-fs.readFile('message.txt','utf8', (err, data) => {
-  if (err) throw err;
-  console.log(data);
-});
+fs.writeFile("greeting.txt","Namaste",(err)=>{
+  if(err) throw err;
+  console.log("Your file has been saved");
+})

@@ -1,11 +1,11 @@
-const fs = require('fs');
+const fs = require("fs");
 
-// fs.writeFile("greeting.txt","Namaste",(err)=>{
+// fs.writeFile("message.txt","Hey Aryan, It's gonna be alright.", (err) => {
 //   if(err) throw err;
-//   console.log("Your file has been saved");
+//   console.log("This file has been saved.");
 // });
 
-fs.readFile("greeting.txt", "utf8", (err, data) => {
+fs.readFile("./message.txt",'utf-8',(err,data) => {
   if(err) throw err;
   console.log(data);
-})
+} );

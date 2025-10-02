@@ -3,12 +3,15 @@
         background-color: rgb(201, 0, 0);
         color: white;
         border: none;
-        height: 36px;
-        width: 105px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 16px;
+        padding-right: 16px;
         border-radius: 2px;
         cursor: pointer;
         margin-right: 8px;
         transition: opacity 0.15s;
+        vertical-align: top;
     }
 
     .subscribe-button:hover{
@@ -26,8 +29,10 @@
         border-color: rgb(41, 118, 211) ;
         border-style: solid;
         border-width: 1px;
-        height: 36px;
-        width: 62px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        padding-left: 16px;
+        padding-right: 16px;
         border-radius: 2px;
         cursor: pointer;
         margin-right: 8px;
@@ -53,6 +58,7 @@
         font-size: 15px;
         cursor: pointer;
         transition: box-shadow 0.15s;
+        vertical-align: top;
     }
     .tweet-button:hover{
         box-shadow: 10px 5px 5px rgba(0,0,0,0.15);
@@ -65,6 +71,8 @@
 to the left of the colon, we have css property and to the right, we have css value. To change text color, we use color property-->
 <!-- To target a class in css, use .class_name -->
 <!-- space around a element is called margin -->
+<!-- CSS box model, how much space does an element takes up, how far it is away from other elements -->
+<!-- Padding is better alternative compared to height and width, height and width, if our text is overflowing will take it out of the element, Box model won't let that happen -->
 
 <button class="join-button">JOIN</button>
 

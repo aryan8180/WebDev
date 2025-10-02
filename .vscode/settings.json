@@ -1,3 +1,4 @@
 {
-    "livePreview.defaultPreviewPath": "/CSS Properties/6.3 CSS Box Model/index.html"
+    "livePreview.defaultPreviewPath": "/CSS Properties/6.3 CSS Box Model/index.html",
+    "liveServer.settings.port": 5501
 }

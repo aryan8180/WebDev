@@ -1,71 +1,75 @@
-<style>
-    .subscribe-button {
-        background-color: rgb(201, 0, 0);
-        color: white;
-        border: none;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 16px;
-        padding-right: 16px;
-        border-radius: 2px;
-        cursor: pointer;
-        margin-right: 8px;
-        transition: opacity 0.15s;
-        vertical-align: top;
-    }
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Button Practice</title>
+        <style>
+            .subscribe-button {
+                background-color: rgb(201, 0, 0);
+                color: white;
+                border: none;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 16px;
+                padding-right: 16px;
+                border-radius: 2px;
+                cursor: pointer;
+                margin-right: 8px;
+                transition: opacity 0.15s;
+                vertical-align: top;
+            }
 
-    .subscribe-button:hover{
-        opacity: 0.7;
-    }
-    /* Opacity is used to fade out the element, varies between 0 to 1 */
+            .subscribe-button:hover{
+                opacity: 0.7;
+            }
+        /* Opacity is used to fade out the element, varies between 0 to 1 */
 
-    .subscribe-button:active{
-        opacity: 0.4;
-    }
+            .subscribe-button:active{
+                opacity: 0.4;
+            }
 
-    .join-button {
-        color: rgb(41, 118, 211);
-        background-color: white;
-        border-color: rgb(41, 118, 211) ;
-        border-style: solid;
-        border-width: 1px;
-        padding-top: 9px;
-        padding-bottom: 9px;
-        padding-left: 16px;
-        padding-right: 16px;
-        border-radius: 2px;
-        cursor: pointer;
-        margin-right: 8px;
-        transition: background-color 1s, color 0.15s;
-    }
+            .join-button {
+                color: rgb(41, 118, 211);
+                background-color: white;
+                border-color: rgb(41, 118, 211) ;
+                border-style: solid;
+                border-width: 1px;
+                padding-top: 9px;
+                padding-bottom: 9px;
+                padding-left: 16px;
+                padding-right: 16px;
+                border-radius: 2px;
+                cursor: pointer;
+                margin-right: 8px;
+                transition: background-color 1s, color 0.15s;
+            }
 
-    .join-button:hover{
-        background-color: rgb(41, 118, 211);
-        color: white;
-    }
-    .join-button:active{
-        opacity: 0.7;
-    }
+            .join-button:hover{
+                background-color: rgb(41, 118, 211);
+                color: white;
+            }
+            .join-button:active{
+                opacity: 0.7;
+            }
 
-    .tweet-button{
-        background-color: rgb(2, 137, 255);
-        color: white;
-        border: none;
-        height: 36px;
-        width: 105px;
-        border-radius: 18px;
-        font-weight: bold;
-        font-size: 15px;
-        cursor: pointer;
-        transition: box-shadow 0.15s;
-        vertical-align: top;
-    }
-    .tweet-button:hover{
-        box-shadow: 10px 5px 5px rgba(0,0,0,0.15);
-    }
+            .tweet-button{
+                background-color: rgb(2, 137, 255);
+                color: white;
+                border: none;
+                height: 36px;
+                width: 105px;
+                border-radius: 18px;
+                font-weight: bold;
+                font-size: 15px;
+                cursor: pointer;
+                transition: box-shadow 0.15s;
+                vertical-align: top;
+            }
+            .tweet-button:hover{
+                box-shadow: 10px 5px 5px rgba(0,0,0,0.15);
+            }
 </style>
 
-<button class="subscribe-button">SUBSCRIBE</button>
+
 
 <!-- button in the style element is the css selector, it tells which elements on the page we are targeting in our css code
 to the left of the colon, we have css property and to the right, we have css value. To change text color, we use color property-->
@@ -74,6 +78,13 @@ to the left of the colon, we have css property and to the right, we have css val
 <!-- CSS box model, how much space does an element takes up, how far it is away from other elements -->
 <!-- Padding is better alternative compared to height and width, height and width, if our text is overflowing will take it out of the element, Box model won't let that happen -->
 
-<button class="join-button">JOIN</button>
 
-<button class="tweet-button">Tweet</button>
+    </head>
+    <body>
+        <button class="subscribe-button">SUBSCRIBE</button>
+        <button class="join-button">JOIN</button>
+        <button class="tweet-button">Tweet</button>
+    </body>
+</html>
+
+<!-- Features we get by following the structure: <title>, live server, link css files, add new fonts and more -->
